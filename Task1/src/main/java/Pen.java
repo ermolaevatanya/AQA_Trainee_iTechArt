@@ -46,5 +46,5 @@ public class Pen {
     public void doSomethingElse(){
         System.out.println(color);
     }
-
 }
+
