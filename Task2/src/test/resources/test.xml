@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM
+        "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1" >
+    <test name="Onliner Test">
+        <parameter name="maxPrice" value="1000"/>
+        <parameter name="diagonalFrom" value="40"/>
+        <parameter name="diagonalTo" value="50"/>
+        <classes>
+            <class name="OnlinerTest"/>
+        </classes>
+    </test>
+</suite>
