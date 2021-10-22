@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 
 public class TvProductsListPage {
     private final By tvLabel = By.id("schema-products");
-    private final By samsungCheckbox = By.xpath("//span[contains(text(),'Samsung')]");
+    private final String brandCheckbox = "//span[contains(text(),'%s')]";
     private final By maxPriceInput = By.xpath("//input[@placeholder='до']");
-    private final By screenResolutionCheckbox = By.xpath("//span[contains(text(),'1920')]");
+    private final String screenResolutionCheckbox = "//span[contains(text(),'%s')]";
     private final By diagonalFromSelector = By.xpath("//select[@class = 'schema-filter-control__item']");
     private final By diagonalToSelector = By.xpath("//div[@class = 'schema-filter-control schema-filter-control_select']/following-sibling::div/select");
 
@@ -14,15 +14,15 @@ public class TvProductsListPage {
         return tvLabel;
     }
 
-    public By getSamsungCheckbox() {
-        return samsungCheckbox;
+    public String getBrandCheckbox() {
+        return brandCheckbox;
     }
 
     public By getMaxPriceInput() {
         return maxPriceInput;
     }
 
-    public By getScreenResolutionCheckbox() {
+    public String getScreenResolutionCheckbox() {
         return screenResolutionCheckbox;
     }
 

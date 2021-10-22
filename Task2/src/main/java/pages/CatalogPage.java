@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 public class CatalogPage {
     private final By catalogLabel = By.className("catalog-navigation__title");
     private final By electronicButton = By.xpath("//li[@data-id='1']");
-    private final By tvAndVideoButton = By.xpath("//div[contains(text(),'Телевидение')]");
-    private final By tvButton = By.xpath("//span[contains(text(),'Телевизоры')]");
+    private final String tvAndVideoButton = "//div[contains(text(),'%s')]";
+    private final String tvButton = "//span[contains(text(),'%s')]";
 
     public By getCatalogLabel() {
         return catalogLabel;
@@ -16,11 +16,11 @@ public class CatalogPage {
         return electronicButton;
     }
 
-    public By getTvAndVideoButton() {
+    public String getTvAndVideoButton() {
         return tvAndVideoButton;
     }
 
-    public By getTvButton() {
+    public String getTvButton() {
         return tvButton;
     }
 }

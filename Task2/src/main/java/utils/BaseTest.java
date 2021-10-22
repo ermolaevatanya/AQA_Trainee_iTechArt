@@ -1,12 +1,14 @@
-package browser;
+package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.util.concurrent.TimeUnit;
 
-public class Browser {
+public class BaseTest {
     protected static final String BASE_URL = "https://onliner.by";
 
     protected WebDriver driver;
@@ -21,7 +23,6 @@ public class Browser {
     @BeforeMethod
     public void startDriver() {
         this.driver.get(BASE_URL);
-        this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterSuite

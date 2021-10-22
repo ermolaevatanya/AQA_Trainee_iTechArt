@@ -2,9 +2,15 @@
         "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" verbose="1" >
     <test name="Onliner Test">
+        <parameter name="navigationText" value="Каталог"/>
+        <parameter name="tvAndVideoText" value="Телевидение"/>
+        <parameter name="tvText" value="Телевизоры"/>
+        <parameter name="brandText" value="Samsung"/>
+        <parameter name="screenResolutionText" value="1920"/>
         <parameter name="maxPrice" value="1000"/>
         <parameter name="diagonalFrom" value="40"/>
         <parameter name="diagonalTo" value="50"/>
+        <parameter name="screen" value="1920x1080"/>
         <classes>
             <class name="OnlinerTest"/>
         </classes>

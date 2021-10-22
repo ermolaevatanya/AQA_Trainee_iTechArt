@@ -1,6 +1,7 @@
 package services;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 
@@ -12,7 +13,7 @@ public class HomeService {
         this.driver = driver;
     }
 
-    public void openCatalogPage (){
-        driver.findElement(homePage.getCatalogButton()).click();
+    public void openCatalogPage(String navigationText){
+        driver.findElement(By.xpath(String.format(homePage.getNavigationButton(), navigationText))).click();
     }
 }

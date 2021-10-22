@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 
 public class HomePage {
 
-    private final By catalogButton = By.xpath("//a[contains(text(),'Каталог')]");
+    private final String navigationButton = "//a[contains(text(),'%s')]";
 
-    public By getCatalogButton() {
-        return catalogButton;
+    public String getNavigationButton() {
+        return navigationButton;
     }
 }
