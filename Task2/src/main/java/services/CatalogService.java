@@ -12,11 +12,11 @@ public class CatalogService {
         this.driver = driver;
     }
 
-    public boolean isCatalogPageShown(){
+    public boolean isCatalogPageShown() {
         return driver.findElement(catalogPage.getCatalogLabel()).isDisplayed();
     }
 
-    public void openTvProductsListPage(String tvAndVideoText, String tvText){
+    public void openTvProductsListPage(String tvAndVideoText, String tvText) {
         driver.findElement(catalogPage.getElectronicButton()).click();
         driver.findElement(By.xpath(String.format(catalogPage.getTvAndVideoButton(), tvAndVideoText))).click();
         driver.findElement(By.xpath(String.format(catalogPage.getTvButton(), tvText))).click();

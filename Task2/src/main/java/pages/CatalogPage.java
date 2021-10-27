@@ -23,5 +23,5 @@ public class CatalogPage {
     public String getTvButton() {
         return tvButton;
     }
-}
 
+}

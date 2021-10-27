@@ -1,10 +1,6 @@
-<!DOCTYPE suite SYSTEM
-        "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" verbose="1" >
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Onliner Suite" verbose="1" >
     <test name="Onliner Test">
-        <parameter name="navigationText" value="Каталог"/>
-        <parameter name="tvAndVideoText" value="Телевидение"/>
-        <parameter name="tvText" value="Телевизоры"/>
         <parameter name="brandText" value="Samsung"/>
         <parameter name="screenResolutionText" value="1920"/>
         <parameter name="maxPrice" value="1000"/>
